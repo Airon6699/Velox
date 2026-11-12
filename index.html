@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELOX — Bicycle Store</title>
+    <link rel="icon" type="image/png" href="https://thumbs.dreamstime.com/b/go-green-bicycle-11828267.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOADING -->
+
+    <div class="load" id="load">
+        <h1>VELOX<span>.</span></h1>
+        <i class="fa-solid fa-bicycle"></i>
+        <div class="load-line"></div>
+    </div>
+
+    <!-- HEADER -->
+
+    <header class="head">
+
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-bicycle"></i>
+            VELOX<span>.</span>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+        </nav>
+
+        <div class="head-btns">
+
+            <button class="icon-btn" id="fav-open">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+            <button class="icon-btn" id="cart-open">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="count">0</span>
+            </button>
+
+            <button class="menu-btn" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-bg"></div>
+            <div class="hero-dark"></div>
+
+            <div class="hero-text">
+                <p class="small-title">BICYCLES OF A NEW GENERATION</p>
+
+                <h1>
+                    Ride
+                    <br>
+                    <span>beyond.</span>
+                </h1>
+
+                <p>
+                    Discover premium bikes designed for city streets,
+                    mountain trails and every journey in between.
+                </p>
+
+                <div class="hero-btns">
+                    <a href="#shop" class="btn">
+                        Explore bikes
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#about" class="btn2">Our story</a>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span>RIDE YOUR WAY — 2026</span>
+                <span>01 / 04</span>
+            </div>
+
+        </section>
+
+        <!-- BENEFITS -->
+
+        <section class="benefits">
+
+            <div class="benefit">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                    <h4>Fast delivery</h4>
+                    <p>Across the country</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <h4>Warranty</h4>
+                    <p>Up to 2 years</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                    <h4>Support</h4>
+                    <p>Always here to help</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <i class="fa-solid fa-rotate"></i>
+                <div>
+                    <h4>Easy returns</h4>
+                    <p>14-day return period</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- TICKER -->
+
+        <div class="ticker">
+            <div>
+                VELOX <span>✳</span>
+                RIDE MORE <span>✳</span>
+                GO FURTHER <span>✳</span>
+                LIVE FREE <span>✳</span>
+                VELOX <span>✳</span>
+                RIDE MORE <span>✳</span>
+            </div>
+        </div>
+
+        <!-- CATEGORIES -->
+
+        <section class="section" id="categories">
+
+            <div class="title">
+                <div>
+                    <p class="small-title">FIND YOUR RIDE</p>
+                    <h2>Explore categories<span>.</span></h2>
+                </div>
+                <p>Choose your perfect bike.</p>
+            </div>
+
+            <div class="cats">
+
+                <a href="#shop" class="cat mountain" data-cat="Mountain">
+                    <div>
+                        <small>01 / OFF-ROAD</small>
+                        <h3>Mountain</h3>
+                        <p>Built for adventure</p>
+                        <b>Explore <i class="fa-solid fa-arrow-right"></i></b>
+                    </div>
+                </a>
+
+                <a href="#shop" class="cat road" data-cat="Road">
+                    <div>
+                        <small>02 / SPEED</small>
+                        <h3>Road</h3>
+                        <p>Made for speed</p>
+                        <b>Explore <i class="fa-solid fa-arrow-right"></i></b>
+                    </div>
+                </a>
+
+                <a href="#shop" class="cat city" data-cat="City">
+                    <div>
+                        <small>03 / URBAN</small>
+                        <h3>City</h3>
+                        <p>Your everyday bike</p>
+                        <b>Explore <i class="fa-solid fa-arrow-right"></i></b>
+                    </div>
+                </a>
+
+                <a href="#shop" class="cat electric" data-cat="Electric">
+                    <div>
+                        <small>04 / ELECTRIC</small>
+                        <h3>Electric</h3>
+                        <p>Go further</p>
+                        <b>Explore <i class="fa-solid fa-arrow-right"></i></b>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- SHOP -->
+
+        <section class="shop section" id="shop">
+
+            <div class="title">
+                <div>
+                    <p class="small-title">THE VELOX COLLECTION</p>
+                    <h2>Our bicycles<span>.</span></h2>
+                </div>
+                <p id="total">8 bikes available</p>
+            </div>
+
+            <div class="shop-box">
+
+                <!-- FILTERS -->
+
+                <aside class="filters">
+
+                    <div class="filter-head">
+                        <h3>Filters</h3>
+                        <button id="reset">Clear all</button>
+                    </div>
+
+                    <h4>Category</h4>
+
+                    <label>
+                        <input type="checkbox" class="check" value="Mountain">
+                        Mountain
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="check" value="Road">
+                        Road
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="check" value="City">
+                        City
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="check" value="Electric">
+                        Electric
+                    </label>
+
+                    <h4 class="price-title">Maximum price</h4>
+
+                    <input type="range" id="price" min="20000" max="200000" value="200000" step="5000">
+
+                    <div class="price-text">
+                        <span>20,000 ₽</span>
+                        <b id="price-text">200,000 ₽</b>
+                    </div>
+
+                    <button class="btn apply" id="apply">Apply filters</button>
+
+                </aside>
+
+                <!-- PRODUCTS -->
+
+                <div class="products">
+
+                    <div class="tools">
+
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="search" placeholder="Search bikes...">
+                        </div>
+
+                        <select id="sort">
+                            <option value="default">Featured</option>
+                            <option value="cheap">Price: Low to High</option>
+                            <option value="expensive">Price: High to Low</option>
+                        </select>
+
+                    </div>
+
+                    <div class="cards" id="cards">
+
+                        <article class="bike" data-id="1" data-name="Velox MTB Pro" data-cat="Mountain" data-price="49990">
+
+                            <div class="bike-img">
+                                <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=900&q=85" alt="Mountain bike">
+
+                                <span class="tag">BESTSELLER</span>
+
+                                <button class="fav">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="bike-info">
+                                <small>MOUNTAIN</small>
+                                <h3>Velox MTB Pro</h3>
+                                <p>All-terrain performance</p>
+
+                                <div class="bike-bottom">
+                                    <strong>49,990 ₽</strong>
+                                    <button class="add"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="bike" data-id="2" data-name="Velox Road Elite" data-cat="Road" data-price="69990">
+
+                            <div class="bike-img">
+                                <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=900&q=85" alt="Road bike">
+
+                                <span class="tag">NEW</span>
+
+                                <button class="fav">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="bike-info">
+                                <small>ROAD</small>
+                                <h3>Velox Road Elite</h3>
+                                <p>Lightweight speed machine</p>
+
+                                <div class="bike-bottom">
+                                    <strong>69,990 ₽</strong>
+                                    <button class="add"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="bike" data-id="3" data-name="Velox City Comfort" data-cat="City" data-price="39990">
+
+                            <div class="bike-img">
+                                <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=900&q=85" alt="City bike">
+
+                                <span class="tag">SALE</span>
+
+                                <button class="fav">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="bike-info">
+                                <small>CITY</small>
+                                <h3>Velox City Comfort</h3>
+                                <p>Comfort for everyday rides</p>
+
+                                <div class="bike-bottom">
+                                    <strong>39,990 ₽</strong>
+                                    <del>44,990 ₽</del>
+                                    <button class="add"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="bike" data-id="4" data-name="Velox E-Bike X1" data-cat="Electric" data-price="99990">
+
+                            <div class="bike-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQocnhF4FZb5LQz8dOhLf3xGnTRAx6paPeOro8sGZwBsUizUUtNJJPPVQw&s=10" alt="Electric bike">
+
+                                <span class="tag">NEW</span>
+
+                                <button class="fav">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="bike-info">
+                                <small>ELECTRIC</small>
+                                <h3>Velox E-Bike X1</h3>
+                                <p>Power your everyday journey</p>
+
+                                <div class="bike-bottom">
+                                    <strong>99,990 ₽</strong>
+                                    <button class="add"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="bike" data-id="5" data-name="Velox Trail 29" data-cat="Mountain" data-price="57990">
+
+                            <div class="bike-img">
+                                <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=900&q=85" alt="Trail bike">
+
+                                <button class="fav">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="bike-info">
+                                <small>MOUNTAIN</small>
+                                <h3>Velox Trail 29</h3>
+                                <p>Confidence on every trail</p>
+
+                                <div class="bike-bottom">
+                                    <strong>57,990 ₽</strong>
+                                    <button class="add"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="bike" data-id="6" data-name="Velox Sprint Carbon" data-cat="Road" data-price="129990">
+
+                            <div class="bike-img">
+                                <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=900&q=85" alt="Carbon road bike">
+
+                                <span class="tag">PRO</span>
+
+                                <button class="fav">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="bike-info">
+                                <small>ROAD</small>
+                                <h3>Velox Sprint Carbon</h3>
+                                <p>Built for the fastest lines</p>
+
+                                <div class="bike-bottom">
+                                    <strong>129,990 ₽</strong>
+                                    <button class="add"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="bike" data-id="7" data-name="Velox Urban 7" data-cat="City" data-price="32990">
+
+                            <div class="bike-img">
+                                <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=900&q=85" alt="Urban bicycle">
+
+                                <button class="fav">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="bike-info">
+                                <small>CITY</small>
+                                <h3>Velox Urban 7</h3>
+                                <p>Simple, clean and practical</p>
+
+                                <div class="bike-bottom">
+                                    <strong>32,990 ₽</strong>
+                                    <button class="add"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="bike" data-id="8" data-name="Velox E-Bike Pro" data-cat="Electric" data-price="179990">
+
+                            <div class="bike-img">
+                                <img src="https://electrixmotoco.com/cdn/shop/files/1_c50bb3ef-1aae-4979-ae63-7f1adb34967c.png?v=1770397081" alt="Electric bike pro">
+
+                                <span class="tag">PRO</span>
+
+                                <button class="fav">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <div class="bike-info">
+                                <small>ELECTRIC</small>
+                                <h3>Velox E-Bike Pro</h3>
+                                <p>Premium electric performance</p>
+
+                                <div class="bike-bottom">
+                                    <strong>179,990 ₽</strong>
+                                    <button class="add"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <p class="empty-products" id="empty-products">
+                        No bikes found.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMO -->
+
+        <section class="promo section">
+            <div class="promo-box">
+                <div>
+                    <p class="small-title">YOUR NEXT ADVENTURE STARTS HERE</p>
+                    <h2>Your next<br><span>great ride.</span></h2>
+                    <p>Find the right bike and make every journey count.</p>
+                    <a href="#shop" class="btn">
+                        Find your bike <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="about section" id="about">
+
+            <div class="about-img"></div>
+
+            <div class="about-text">
+                <p class="small-title">THE STORY BEHIND VELOX</p>
+                <h2>Made for<br><span>movement.</span></h2>
+
+                <p>
+                    VELOX brings together modern design, everyday comfort
+                    and reliable performance. We believe a bicycle should
+                    be more than a way to get around.
+                </p>
+
+                <p>
+                    From daily city rides to weekend adventures,
+                    there is a bike for every kind of journey.
+                </p>
+
+                <a href="#shop" class="text-link">
+                    Explore the collection <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- SERVICES -->
+
+        <section class="section" id="services">
+
+            <div class="title">
+                <div>
+                    <p class="small-title">SUPPORT AND MAINTENANCE</p>
+                    <h2>Our services<span>.</span></h2>
+                </div>
+                <p>We are here for every ride.</p>
+            </div>
+
+            <div class="services">
+
+                <div class="service">
+                    <span>01</span>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Bike maintenance</h3>
+                    <p>Regular checks and adjustments to keep your bike in good condition.</p>
+                </div>
+
+                <div class="service">
+                    <span>02</span>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Warranty support</h3>
+                    <p>Help with warranty questions and product issues.</p>
+                </div>
+
+                <div class="service">
+                    <span>03</span>
+                    <i class="fa-solid fa-user-check"></i>
+                    <h3>Personal guidance</h3>
+                    <p>Get help choosing a bike that matches your riding style.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- REVIEWS -->
+
+        <section class="reviews section">
+
+            <div class="title">
+                <div>
+                    <p class="small-title">CUSTOMER STORIES</p>
+                    <h2>What riders say<span>.</span></h2>
+                </div>
+            </div>
+
+            <div class="reviews-box">
+
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>A great bike for everyday rides. The design looks clean and the ride feels comfortable.</p>
+
+                    <div class="person">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces" alt="Alex Morgan">
+                        <div>
+                            <b>Alex Morgan</b>
+                            <small>VELOX MTB customer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>I liked the design and overall feel. It was easy to find a model that suited my needs.</p>
+
+                    <div class="person">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=faces" alt="Max Carter">
+                        <div>
+                            <b>Max Carter</b>
+                            <small>VELOX Road customer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="stars">★★★★★</div>
+                    <p>A practical choice for city rides. Stylish, comfortable and enjoyable to use.</p>
+
+                    <div class="person">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces" alt="Daniel Reed">
+                        <div>
+                            <b>Daniel Reed</b>
+                            <small>VELOX City customer</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="demo-note">Sample reviews for design preview.</p>
+
+        </section>
+
+        <!-- FAQ -->
+
+        <section class="section" id="faq">
+
+            <div class="title">
+                <div>
+                    <p class="small-title">NEED A HAND?</p>
+                    <h2>Common questions<span>.</span></h2>
+                </div>
+            </div>
+
+            <div class="faq">
+
+                <div class="faq-item">
+                    <button class="question">
+                        How do I choose the right bicycle?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <p>For city rides, consider a city bike. Mountain bikes are designed for rough terrain, while road bikes are made for paved routes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="question">
+                        Do you offer delivery?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <p>Delivery areas, timing and fees must be configured by the store owner.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="question">
+                        What warranty is included?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="answer">
+                        <p>Warranty terms depend on the model and the seller's actual policy.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- NEWSLETTER -->
+
+        <section class="section">
+            <div class="news">
+
+                <div>
+                    <p class="small-title">STAY IN THE LOOP</p>
+                    <h2>Never miss<br><span>what's next.</span></h2>
+                    <p>Get updates about new bikes and special offers.</p>
+                </div>
+
+                <form id="news-form">
+                    <div class="news-input">
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <small id="news-text">Get the latest VELOX updates.</small>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="foot">
+
+        <div class="foot-top">
+
+            <div>
+                <a href="#home" class="logo">
+                    <i class="fa-solid fa-bicycle"></i>
+                    VELOX<span>.</span>
+                </a>
+                <p>Ride more.<br>Go further. Live free.</p>
+
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="foot-links">
+                <h4>Explore</h4>
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About us</a>
+            </div>
+
+            <div class="foot-links">
+                <h4>Help</h4>
+                <a href="#services">Services</a>
+                <a href="#faq">FAQ</a>
+                <a href="#shop">Products</a>
+            </div>
+
+            <div class="foot-links">
+                <h4>Contact</h4>
+                <a href="mailto:info@velox.example">info@velox.example</a>
+                <span>Mon — Sat: 9 AM — 6 PM</span>
+            </div>
+
+        </div>
+
+        <div class="foot-bottom">
+            <p>© 2026 VELOX. All rights reserved.</p>
+            <p>DESIGNED FOR MOVEMENT.</p>
+            <a href="#home">Back to top ↑</a>
+        </div>
+
+    </footer>
+
+    <!-- CART -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart" id="cart">
+
+        <div class="cart-head">
+            <h3>Your bag</h3>
+            <button id="cart-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cart-items">
+            <p class="empty">Your bag is empty.</p>
+        </div>
+
+        <div class="cart-bottom">
+            <div>
+                <span>Subtotal</span>
+                <b id="cart-total">0 ₽</b>
+            </div>
+
+            <button class="btn checkout" id="checkout">
+                Continue to checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <small>Demo store. Online payments are not connected.</small>
+        </div>
+
+    </aside>
+
+    <div class="toast" id="toast"></div>
+
+    <button class="top-btn" id="top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
